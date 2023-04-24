@@ -1,0 +1,52 @@
+Release Notes for APM32F10x SDK
+
+
+Update History
+V1.0 / 19-01-2020
+First Release version of APM32F10x SDK.
+
+V1.1 / 06-06-2020
+Support AMP32F103xE.
+Added devices
+
+V1.2 / 20-07-2020
+Correct svd file in the pack.
+
+V1.3 / 22-08-2020
+Correct DBGMCU->IDCODE_B.REVID bitOffset and bitWidth.
+
+V1.4 / 14-04-2021
+Update Library for 1.0.1：
+Change the register name to match APM32F103 user manual.
+Update pack for 1.0.6：
+Support AMP32F103CC，Update APM32F103xx.svd.
+Update Examples：
+Added CAN TwoBoards communication.
+
+V1.5 / 20-05-2021
+Update pack for 1.0.7：
+Added Board_APM32F103VCS_MINI drive.
+Update Example：
+Added DMC_SDRAM example in EMMC module.
+
+V1.6 / 24-02-2022
+Update pack for 1.0.8.
+Update Library for 1.0.2.
+Added IAR Support.
+Added USB_Device_Lib.
+Added USB Example.
+
+V1.7 / 04-08-2022
+Update pack for 1.0.9.
+Update Library for 1.0.3.
+Added APM32F10X_CL Support.
+Update the name of SMC from EMMC to SMC in EMMC driver.
+Added OTG and ETH Driver and Example.
+Added RTOS, IAP, TMR_32BitCount, TMR_EncoderInterface, USART_IrDA, USART_LIN Example.
+
+V1.8 / 01-12-2022
+Update Library for 1.0.4.
+Update USB_OTG_Lib Library.
+Update APM32F10x_ETH_Driver Library.
+Added Eclipse Support.
+Added Other Example.

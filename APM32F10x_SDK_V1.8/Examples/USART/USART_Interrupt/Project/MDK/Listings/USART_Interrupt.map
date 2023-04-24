@@ -1,0 +1,1361 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    system_apm32f10x.o(i.SystemClockConfig) refers to system_apm32f10x.o(i.SystemClock72M) for SystemClock72M
+    system_apm32f10x.o(i.SystemCoreClockUpdate) refers to system_apm32f10x.o(.data) for SystemCoreClock
+    system_apm32f10x.o(i.SystemInit) refers to system_apm32f10x.o(i.SystemClockConfig) for SystemClockConfig
+    startup_apm32f10x_hd.o(RESET) refers to startup_apm32f10x_hd.o(STACK) for __initial_sp
+    startup_apm32f10x_hd.o(RESET) refers to startup_apm32f10x_hd.o(.text) for Reset_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.NMI_Handler) for NMI_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.HardFault_Handler) for HardFault_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.MemManage_Handler) for MemManage_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.BusFault_Handler) for BusFault_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.SVC_Handler) for SVC_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.PendSV_Handler) for PendSV_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.SysTick_Handler) for SysTick_Handler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.USART1_IRQHandler) for USART1_IRQHandler
+    startup_apm32f10x_hd.o(RESET) refers to apm32f10x_int.o(i.USART2_IRQHandler) for USART2_IRQHandler
+    startup_apm32f10x_hd.o(.text) refers to system_apm32f10x.o(i.SystemInit) for SystemInit
+    startup_apm32f10x_hd.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    apm32f10x_adc.o(i.ADC_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_adc.o(i.ADC_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_bakpr.o(i.BAKPR_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableBackupReset) for RCM_EnableBackupReset
+    apm32f10x_bakpr.o(i.BAKPR_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableBackupReset) for RCM_DisableBackupReset
+    apm32f10x_can.o(i.CAN_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_can.o(i.CAN_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_dac.o(i.DAC_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_dac.o(i.DAC_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_dmc.o(i.DMC_Config) refers to apm32f10x_dmc.o(i.DMC_ConfigTiming) for DMC_ConfigTiming
+    apm32f10x_dmc.o(i.DMC_ConfigStructInit) refers to apm32f10x_dmc.o(i.DMC_ConfigTimingStructInit) for DMC_ConfigTimingStructInit
+    apm32f10x_fmc.o(i.FMC_ConfigUserOptionByte) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_DisableReadOutProtection) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_EnableReadOutProtection) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_EnableWriteProtection) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_EraseAllPage) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_EraseOptionBytes) refers to apm32f10x_fmc.o(i.FMC_GetReadProtectionStatus) for FMC_GetReadProtectionStatus
+    apm32f10x_fmc.o(i.FMC_EraseOptionBytes) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_ErasePage) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_ProgramHalfWord) refers to apm32f10x_fmc.o(i.__set_PRIMASK) for __set_PRIMASK
+    apm32f10x_fmc.o(i.FMC_ProgramHalfWord) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_ProgramOptionByteData) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_ProgramWord) refers to apm32f10x_fmc.o(i.__set_PRIMASK) for __set_PRIMASK
+    apm32f10x_fmc.o(i.FMC_ProgramWord) refers to apm32f10x_fmc.o(i.FMC_WaitForLastOperation) for FMC_WaitForLastOperation
+    apm32f10x_fmc.o(i.FMC_WaitForLastOperation) refers to apm32f10x_fmc.o(i.FMC_ReadStatus) for FMC_ReadStatus
+    apm32f10x_gpio.o(i.GPIO_AFIOReset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_gpio.o(i.GPIO_AFIOReset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_gpio.o(i.GPIO_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_gpio.o(i.GPIO_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_i2c.o(i.I2C_Config) refers to apm32f10x_rcm.o(i.RCM_ReadPCLKFreq) for RCM_ReadPCLKFreq
+    apm32f10x_i2c.o(i.I2C_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_i2c.o(i.I2C_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_misc.o(i.NVIC_EnableIRQRequest) refers to apm32f10x_misc.o(i.NVIC_ConfigPriorityGroup) for NVIC_ConfigPriorityGroup
+    apm32f10x_pmu.o(i.PMU_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_pmu.o(i.PMU_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_rcm.o(i.RCM_ReadADCCLKFreq) refers to apm32f10x_rcm.o(i.RCM_ReadPCLKFreq) for RCM_ReadPCLKFreq
+    apm32f10x_rcm.o(i.RCM_ReadHCLKFreq) refers to apm32f10x_rcm.o(i.RCM_ReadSYSCLKFreq) for RCM_ReadSYSCLKFreq
+    apm32f10x_rcm.o(i.RCM_ReadPCLKFreq) refers to apm32f10x_rcm.o(i.RCM_ReadHCLKFreq) for RCM_ReadHCLKFreq
+    apm32f10x_rtc.o(i.RTC_ConfigAlarm) refers to apm32f10x_rtc.o(i.RTC_EnableConfigMode) for RTC_EnableConfigMode
+    apm32f10x_rtc.o(i.RTC_ConfigAlarm) refers to apm32f10x_rtc.o(i.RTC_DisableConfigMode) for RTC_DisableConfigMode
+    apm32f10x_rtc.o(i.RTC_ConfigCounter) refers to apm32f10x_rtc.o(i.RTC_EnableConfigMode) for RTC_EnableConfigMode
+    apm32f10x_rtc.o(i.RTC_ConfigCounter) refers to apm32f10x_rtc.o(i.RTC_DisableConfigMode) for RTC_DisableConfigMode
+    apm32f10x_rtc.o(i.RTC_ConfigPrescaler) refers to apm32f10x_rtc.o(i.RTC_EnableConfigMode) for RTC_EnableConfigMode
+    apm32f10x_rtc.o(i.RTC_ConfigPrescaler) refers to apm32f10x_rtc.o(i.RTC_DisableConfigMode) for RTC_DisableConfigMode
+    apm32f10x_sci2c.o(i.SCI2C_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_sci2c.o(i.SCI2C_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_spi.o(i.I2S_Config) refers to apm32f10x_rcm.o(i.RCM_ReadSYSCLKFreq) for RCM_ReadSYSCLKFreq
+    apm32f10x_spi.o(i.SPI_I2S_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_spi.o(i.SPI_I2S_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_spi.o(i.SPI_I2S_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_spi.o(i.SPI_I2S_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_tmr.o(i.TMR_ConfigETRClockMode1) refers to apm32f10x_tmr.o(i.TMR_ConfigETR) for TMR_ConfigETR
+    apm32f10x_tmr.o(i.TMR_ConfigETRClockMode2) refers to apm32f10x_tmr.o(i.TMR_ConfigETR) for TMR_ConfigETR
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TI1Config) for TI1Config
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TMR_ConfigIC1Prescal) for TMR_ConfigIC1Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TI2Config) for TI2Config
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TMR_ConfigIC2Prescal) for TMR_ConfigIC2Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TI3Config) for TI3Config
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TMR_ConfigIC3Prescal) for TMR_ConfigIC3Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TI4Config) for TI4Config
+    apm32f10x_tmr.o(i.TMR_ConfigIC) refers to apm32f10x_tmr.o(i.TMR_ConfigIC4Prescal) for TMR_ConfigIC4Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigIntTrigExternalClock) refers to apm32f10x_tmr.o(i.TMR_SelectInputTrigger) for TMR_SelectInputTrigger
+    apm32f10x_tmr.o(i.TMR_ConfigPWM) refers to apm32f10x_tmr.o(i.TI1Config) for TI1Config
+    apm32f10x_tmr.o(i.TMR_ConfigPWM) refers to apm32f10x_tmr.o(i.TMR_ConfigIC1Prescal) for TMR_ConfigIC1Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigPWM) refers to apm32f10x_tmr.o(i.TI2Config) for TI2Config
+    apm32f10x_tmr.o(i.TMR_ConfigPWM) refers to apm32f10x_tmr.o(i.TMR_ConfigIC2Prescal) for TMR_ConfigIC2Prescal
+    apm32f10x_tmr.o(i.TMR_ConfigTrigExternalClock) refers to apm32f10x_tmr.o(i.TI2Config) for TI2Config
+    apm32f10x_tmr.o(i.TMR_ConfigTrigExternalClock) refers to apm32f10x_tmr.o(i.TI1Config) for TI1Config
+    apm32f10x_tmr.o(i.TMR_ConfigTrigExternalClock) refers to apm32f10x_tmr.o(i.TMR_SelectInputTrigger) for TMR_SelectInputTrigger
+    apm32f10x_tmr.o(i.TMR_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_tmr.o(i.TMR_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_tmr.o(i.TMR_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_tmr.o(i.TMR_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_usart.o(i.USART_Config) refers to apm32f10x_rcm.o(i.RCM_ReadPCLKFreq) for RCM_ReadPCLKFreq
+    apm32f10x_usart.o(i.USART_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset) for RCM_EnableAPB2PeriphReset
+    apm32f10x_usart.o(i.USART_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset) for RCM_DisableAPB2PeriphReset
+    apm32f10x_usart.o(i.USART_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_usart.o(i.USART_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    apm32f10x_wwdt.o(i.WWDT_Reset) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset) for RCM_EnableAPB1PeriphReset
+    apm32f10x_wwdt.o(i.WWDT_Reset) refers to apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset) for RCM_DisableAPB1PeriphReset
+    main.o(i.USART1_Isr) refers to apm32f10x_usart.o(i.USART_ReadIntFlag) for USART_ReadIntFlag
+    main.o(i.USART1_Isr) refers to apm32f10x_usart.o(i.USART_RxData) for USART_RxData
+    main.o(i.USART1_Isr) refers to apm32f10x_dma.o(i.DMA_Disable) for DMA_Disable
+    main.o(i.USART1_Isr) refers to apm32f10x_dma.o(i.DMA_ReadDataNumber) for DMA_ReadDataNumber
+    main.o(i.USART1_Isr) refers to apm32f10x_dma.o(i.DMA_ConfigDataNumber) for DMA_ConfigDataNumber
+    main.o(i.USART1_Isr) refers to main.o(i.send_data) for send_data
+    main.o(i.USART1_Isr) refers to apm32f10x_dma.o(i.DMA_Enable) for DMA_Enable
+    main.o(i.USART1_Isr) refers to main.o(.bss) for uart_rx_buf
+    main.o(i.config_dma) refers to apm32f10x_rcm.o(i.RCM_EnableAHBPeriphClock) for RCM_EnableAHBPeriphClock
+    main.o(i.config_dma) refers to apm32f10x_dma.o(i.DMA_Reset) for DMA_Reset
+    main.o(i.config_dma) refers to apm32f10x_dma.o(i.DMA_Config) for DMA_Config
+    main.o(i.config_dma) refers to main.o(.bss) for uart_tx_buf
+    main.o(i.main) refers to board.o(i.APM_MINI_LEDInit) for APM_MINI_LEDInit
+    main.o(i.main) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock) for RCM_EnableAPB2PeriphClock
+    main.o(i.main) refers to board.o(i.APM_MINI_COMInit) for APM_MINI_COMInit
+    main.o(i.main) refers to apm32f10x_usart.o(i.USART_EnableDMA) for USART_EnableDMA
+    main.o(i.main) refers to apm32f10x_usart.o(i.USART_EnableInterrupt) for USART_EnableInterrupt
+    main.o(i.main) refers to apm32f10x_misc.o(i.NVIC_EnableIRQRequest) for NVIC_EnableIRQRequest
+    main.o(i.main) refers to main.o(i.config_dma) for config_dma
+    main.o(i.main) refers to strlen.o(.text) for strlen
+    main.o(i.main) refers to main.o(i.send_data) for send_data
+    main.o(i.send_data) refers to memcpya.o(.text) for __aeabi_memcpy
+    main.o(i.send_data) refers to apm32f10x_usart.o(i.USART_ReadStatusFlag) for USART_ReadStatusFlag
+    main.o(i.send_data) refers to apm32f10x_dma.o(i.DMA_Disable) for DMA_Disable
+    main.o(i.send_data) refers to apm32f10x_dma.o(i.DMA_ConfigDataNumber) for DMA_ConfigDataNumber
+    main.o(i.send_data) refers to apm32f10x_dma.o(i.DMA_Enable) for DMA_Enable
+    main.o(i.send_data) refers to main.o(.bss) for uart_tx_buf
+    apm32f10x_int.o(i.USART1_IRQHandler) refers to main.o(i.USART1_Isr) for USART1_Isr
+    board.o(i.APM_MINI_COMInit) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock) for RCM_EnableAPB2PeriphClock
+    board.o(i.APM_MINI_COMInit) refers to apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphClock) for RCM_EnableAPB1PeriphClock
+    board.o(i.APM_MINI_COMInit) refers to apm32f10x_gpio.o(i.GPIO_Config) for GPIO_Config
+    board.o(i.APM_MINI_COMInit) refers to apm32f10x_usart.o(i.USART_Config) for USART_Config
+    board.o(i.APM_MINI_COMInit) refers to apm32f10x_usart.o(i.USART_Enable) for USART_Enable
+    board.o(i.APM_MINI_COMInit) refers to board.o(.constdata) for COM_TX_PORT_CLK
+    board.o(i.APM_MINI_COMInit) refers to board.o(.data) for COM_TX_PORT
+    board.o(i.APM_MINI_LEDInit) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock) for RCM_EnableAPB2PeriphClock
+    board.o(i.APM_MINI_LEDInit) refers to apm32f10x_gpio.o(i.GPIO_Config) for GPIO_Config
+    board.o(i.APM_MINI_LEDInit) refers to board.o(.constdata) for GPIO_CLK
+    board.o(i.APM_MINI_LEDInit) refers to board.o(.data) for GPIO_PORT
+    board.o(i.APM_MINI_LEDOff) refers to board.o(.constdata) for GPIO_PIN
+    board.o(i.APM_MINI_LEDOff) refers to board.o(.data) for GPIO_PORT
+    board.o(i.APM_MINI_LEDOn) refers to board.o(.constdata) for GPIO_PIN
+    board.o(i.APM_MINI_LEDOn) refers to board.o(.data) for GPIO_PORT
+    board.o(i.APM_MINI_LEDToggle) refers to board.o(.data) for GPIO_PORT
+    board.o(i.APM_MINI_LEDToggle) refers to board.o(.constdata) for GPIO_PIN
+    board.o(i.APM_MINI_PBGetState) refers to apm32f10x_gpio.o(i.GPIO_ReadInputBit) for GPIO_ReadInputBit
+    board.o(i.APM_MINI_PBGetState) refers to board.o(.constdata) for BUTTON_PIN
+    board.o(i.APM_MINI_PBGetState) refers to board.o(.data) for BUTTON_PORT
+    board.o(i.APM_MINI_PBInit) refers to apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock) for RCM_EnableAPB2PeriphClock
+    board.o(i.APM_MINI_PBInit) refers to apm32f10x_gpio.o(i.GPIO_Config) for GPIO_Config
+    board.o(i.APM_MINI_PBInit) refers to apm32f10x_gpio.o(i.GPIO_ConfigEINTLine) for GPIO_ConfigEINTLine
+    board.o(i.APM_MINI_PBInit) refers to apm32f10x_eint.o(i.EINT_Config) for EINT_Config
+    board.o(i.APM_MINI_PBInit) refers to apm32f10x_misc.o(i.NVIC_EnableIRQRequest) for NVIC_EnableIRQRequest
+    board.o(i.APM_MINI_PBInit) refers to board.o(.constdata) for BUTTON_CLK
+    board.o(i.APM_MINI_PBInit) refers to board.o(.data) for BUTTON_PORT
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_apm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_apm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_apm32f10x.o(.rev16_text), (4 bytes).
+    Removing system_apm32f10x.o(.revsh_text), (4 bytes).
+    Removing system_apm32f10x.o(.rrx_text), (6 bytes).
+    Removing system_apm32f10x.o(i.SystemCoreClockUpdate), (108 bytes).
+    Removing system_apm32f10x.o(.data), (4 bytes).
+    Removing startup_apm32f10x_hd.o(HEAP), (512 bytes).
+    Removing apm32f10x_adc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_adc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_adc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ClearIntFlag), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ClearStatusFlag), (6 bytes).
+    Removing apm32f10x_adc.o(i.ADC_Config), (72 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigAnalogWatchdogSingleChannel), (16 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigAnalogWatchdogThresholds), (6 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigDiscMode), (18 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigExternalTrigInjectedConv), (24 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigInjectedChannel), (130 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigInjectedOffset), (20 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigInjectedSequencerLength), (26 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigRegularChannel), (184 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ConfigStructInit), (18 bytes).
+    Removing apm32f10x_adc.o(i.ADC_Disable), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableAnalogWatchdog), (16 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableAutoInjectedConv), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableDMA), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableDiscMode), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableExternalTrigConv), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableExternalTrigInjectedConv), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableInjectedDiscMode), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableInterrupt), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableSoftwareStartConv), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableSoftwareStartInjectedConv), (18 bytes).
+    Removing apm32f10x_adc.o(i.ADC_DisableTempSensorVrefint), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_Enable), (12 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableAnalogWatchdog), (20 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableAutoInjectedConv), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableDMA), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableDiscMode), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableExternalTrigConv), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableExternalTrigInjectedConv), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableInjectedDiscMode), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableInterrupt), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableSoftwareStartConv), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableSoftwareStartInjectedConv), (26 bytes).
+    Removing apm32f10x_adc.o(i.ADC_EnableTempSensorVrefint), (14 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadCalibrationStartFlag), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadConversionValue), (8 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadDualModeConversionValue), (12 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadInjectedConversionValue), (28 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadIntFlag), (36 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadResetCalibrationStatus), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadSoftwareStartConvStatus), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadSoftwareStartInjectedConvStatus), (10 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ReadStatusFlag), (16 bytes).
+    Removing apm32f10x_adc.o(i.ADC_Reset), (80 bytes).
+    Removing apm32f10x_adc.o(i.ADC_ResetCalibration), (12 bytes).
+    Removing apm32f10x_adc.o(i.ADC_StartCalibration), (12 bytes).
+    Removing apm32f10x_bakpr.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_bakpr.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_bakpr.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ClearIntFlag), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ClearStatusFlag), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ConfigBackupRegister), (28 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ConfigRTCCalibrationValue), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ConfigRTCOutput), (80 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ConfigTamperPinLevel), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_DisableInterrupt), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_DisableTamperPin), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_EnableInterrupt), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_EnableTamperPin), (20 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ReadBackupRegister), (32 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ReadIntFlag), (16 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_ReadStatusFlag), (16 bytes).
+    Removing apm32f10x_bakpr.o(i.BAKPR_Reset), (12 bytes).
+    Removing apm32f10x_can.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_can.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_can.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_can.o(i.CAN_CancelTxMailbox), (58 bytes).
+    Removing apm32f10x_can.o(i.CAN_ClearIntFlag), (268 bytes).
+    Removing apm32f10x_can.o(i.CAN_ClearStatusFlag), (56 bytes).
+    Removing apm32f10x_can.o(i.CAN_Config), (294 bytes).
+    Removing apm32f10x_can.o(i.CAN_ConfigFilter), (266 bytes).
+    Removing apm32f10x_can.o(i.CAN_ConfigStructInit), (30 bytes).
+    Removing apm32f10x_can.o(i.CAN_DisableDBGFreeze), (10 bytes).
+    Removing apm32f10x_can.o(i.CAN_DisableInterrupt), (8 bytes).
+    Removing apm32f10x_can.o(i.CAN_EnableDBGFreeze), (14 bytes).
+    Removing apm32f10x_can.o(i.CAN_EnableInterrupt), (8 bytes).
+    Removing apm32f10x_can.o(i.CAN_OperatingMode), (218 bytes).
+    Removing apm32f10x_can.o(i.CAN_PendingMessage), (20 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReadIntFlag), (234 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReadLSBTxErrorCounter), (10 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReadLastErrorCode), (10 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReadRxErrorCounter), (8 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReadStatusFlag), (120 bytes).
+    Removing apm32f10x_can.o(i.CAN_ReleaseFIFO), (26 bytes).
+    Removing apm32f10x_can.o(i.CAN_Reset), (60 bytes).
+    Removing apm32f10x_can.o(i.CAN_RxMessage), (244 bytes).
+    Removing apm32f10x_can.o(i.CAN_SleepMode), (44 bytes).
+    Removing apm32f10x_can.o(i.CAN_TxMessage), (294 bytes).
+    Removing apm32f10x_can.o(i.CAN_TxMessageStatus), (160 bytes).
+    Removing apm32f10x_can.o(i.CAN_WakeUpMode), (46 bytes).
+    Removing apm32f10x_crc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_crc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_crc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_crc.o(i.CRC_CalculateBlockCRC), (28 bytes).
+    Removing apm32f10x_crc.o(i.CRC_CalculateCRC), (16 bytes).
+    Removing apm32f10x_crc.o(i.CRC_ReadCRC), (12 bytes).
+    Removing apm32f10x_crc.o(i.CRC_ReadIDRegister), (12 bytes).
+    Removing apm32f10x_crc.o(i.CRC_ResetDATA), (20 bytes).
+    Removing apm32f10x_crc.o(i.CRC_WriteIDRegister), (12 bytes).
+    Removing apm32f10x_dac.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_dac.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_dac.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_dac.o(i.DAC_Config), (52 bytes).
+    Removing apm32f10x_dac.o(i.DAC_ConfigChannel1Data), (32 bytes).
+    Removing apm32f10x_dac.o(i.DAC_ConfigChannel2Data), (32 bytes).
+    Removing apm32f10x_dac.o(i.DAC_ConfigDualChannelData), (36 bytes).
+    Removing apm32f10x_dac.o(i.DAC_ConfigStructInit), (12 bytes).
+    Removing apm32f10x_dac.o(i.DAC_DMA_Disable), (40 bytes).
+    Removing apm32f10x_dac.o(i.DAC_DMA_Enable), (48 bytes).
+    Removing apm32f10x_dac.o(i.DAC_Disable), (40 bytes).
+    Removing apm32f10x_dac.o(i.DAC_DisableDualSoftwareTrigger), (28 bytes).
+    Removing apm32f10x_dac.o(i.DAC_DisableSoftwareTrigger), (40 bytes).
+    Removing apm32f10x_dac.o(i.DAC_DisableWaveGeneration), (20 bytes).
+    Removing apm32f10x_dac.o(i.DAC_Enable), (44 bytes).
+    Removing apm32f10x_dac.o(i.DAC_EnableDualSoftwareTrigger), (32 bytes).
+    Removing apm32f10x_dac.o(i.DAC_EnableSoftwareTrigger), (44 bytes).
+    Removing apm32f10x_dac.o(i.DAC_EnableWaveGeneration), (32 bytes).
+    Removing apm32f10x_dac.o(i.DAC_ReadDataOutputValue), (36 bytes).
+    Removing apm32f10x_dac.o(i.DAC_Reset), (20 bytes).
+    Removing apm32f10x_dbgmcu.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_dbgmcu.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_dbgmcu.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_dbgmcu.o(i.DBGMCU_Disable), (16 bytes).
+    Removing apm32f10x_dbgmcu.o(i.DBGMCU_Enable), (16 bytes).
+    Removing apm32f10x_dbgmcu.o(i.DBGMCU_ReadDEVID), (16 bytes).
+    Removing apm32f10x_dbgmcu.o(i.DBGMCU_ReadREVID), (12 bytes).
+    Removing apm32f10x_dma.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_dma.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_dma.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_dma.o(i.DMA_ClearIntFlag), (28 bytes).
+    Removing apm32f10x_dma.o(i.DMA_ClearStatusFlag), (28 bytes).
+    Removing apm32f10x_dma.o(i.DMA_ConfigStructInit), (26 bytes).
+    Removing apm32f10x_dma.o(i.DMA_DisableInterrupt), (8 bytes).
+    Removing apm32f10x_dma.o(i.DMA_EnableInterrupt), (8 bytes).
+    Removing apm32f10x_dma.o(i.DMA_ReadIntFlag), (48 bytes).
+    Removing apm32f10x_dma.o(i.DMA_ReadStatusFlag), (48 bytes).
+    Removing apm32f10x_dmc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_dmc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_dmc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_Config), (204 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigAddrWidth), (28 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigAutoRefreshNumDuringInit), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigBankWidth), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigClockPhase), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigFullRefreshAfterSR), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigFullRefreshBeforeSR), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigMemorySize), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigOpenBank), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigPrechargeType), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigRefreshPeriod), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigStableTimePowerup), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigStructInit), (32 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigTiming), (202 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigTimingStructInit), (94 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ConfigWRAPB), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_Disable), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_DisableAccelerateModule), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EixtSlefRefreshMode), (18 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_Enable), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EnableAccelerateModule), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EnableInit), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EnableUpdateMode), (22 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EnterPowerdownMode), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_EnterSlefRefreshMode), (20 bytes).
+    Removing apm32f10x_dmc.o(i.DMC_ReadSelfRefreshStatus), (12 bytes).
+    Removing apm32f10x_eint.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_eint.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_eint.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_eint.o(i.EINT_ClearIntFlag), (12 bytes).
+    Removing apm32f10x_eint.o(i.EINT_ClearStatusFlag), (12 bytes).
+    Removing apm32f10x_eint.o(i.EINT_Config), (148 bytes).
+    Removing apm32f10x_eint.o(i.EINT_ConfigStructInit), (16 bytes).
+    Removing apm32f10x_eint.o(i.EINT_ReadIntFlag), (40 bytes).
+    Removing apm32f10x_eint.o(i.EINT_ReadStatusFlag), (24 bytes).
+    Removing apm32f10x_eint.o(i.EINT_Reset), (36 bytes).
+    Removing apm32f10x_eint.o(i.EINT_SelectSWInterrupt), (16 bytes).
+    Removing apm32f10x_smc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_smc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_smc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ClearIntFlag), (72 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ClearStatusFlag), (64 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigNAND), (136 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigNANDStructInit), (54 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigNORSRAM), (230 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigNORSRAMStructInit), (114 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigPCCard), (132 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ConfigPCCardStructInit), (60 bytes).
+    Removing apm32f10x_smc.o(i.SMC_DisableInterrupt), (64 bytes).
+    Removing apm32f10x_smc.o(i.SMC_DisableNAND), (44 bytes).
+    Removing apm32f10x_smc.o(i.SMC_DisableNANDECC), (48 bytes).
+    Removing apm32f10x_smc.o(i.SMC_DisableNORSRAM), (28 bytes).
+    Removing apm32f10x_smc.o(i.SMC_DisablePCCARD), (24 bytes).
+    Removing apm32f10x_smc.o(i.SMC_EnableInterrupt), (64 bytes).
+    Removing apm32f10x_smc.o(i.SMC_EnableNAND), (48 bytes).
+    Removing apm32f10x_smc.o(i.SMC_EnableNANDECC), (44 bytes).
+    Removing apm32f10x_smc.o(i.SMC_EnableNORSRAM), (22 bytes).
+    Removing apm32f10x_smc.o(i.SMC_EnablePCCARD), (24 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ReadECC), (28 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ReadIntFlag), (64 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ReadStatusFlag), (52 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ResetNAND), (68 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ResetNORSRAM), (54 bytes).
+    Removing apm32f10x_smc.o(i.SMC_ResetPCCard), (40 bytes).
+    Removing apm32f10x_fmc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_fmc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_fmc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ClearStatusFlag), (12 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ConfigLatency), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ConfigUserOptionByte), (108 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_DisableHalfCycleAccess), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_DisableInterrupt), (36 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_DisablePrefetchBuffer), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_DisableReadOutProtection), (160 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EnableHalfCycleAccess), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EnableInterrupt), (44 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EnablePrefetchBuffer), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EnableReadOutProtection), (160 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EnableWriteProtection), (208 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EraseAllPage), (76 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_EraseOptionBytes), (168 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ErasePage), (80 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_GetReadProtectionStatus), (24 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_Lock), (20 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ProgramHalfWord), (80 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ProgramOptionByteData), (88 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ProgramWord), (124 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ReadOptionByteWriteProtection), (12 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ReadPrefetchBufferStatus), (16 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ReadStatus), (52 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ReadStatusFlag), (44 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_ReadUserOptionByte), (16 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_Unlock), (24 bytes).
+    Removing apm32f10x_fmc.o(i.FMC_WaitForLastOperation), (38 bytes).
+    Removing apm32f10x_fmc.o(i.__set_PRIMASK), (6 bytes).
+    Removing apm32f10x_gpio.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_gpio.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_gpio.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_AFIOReset), (16 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ConfigEINTLine), (164 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ConfigEventOutput), (28 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ConfigPinLock), (18 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ConfigPinRemap), (88 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ConfigStructInit), (16 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_DisableEventOutput), (20 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_EnableEventOutput), (20 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ReadInputBit), (18 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ReadInputPort), (8 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ReadOutputBit), (18 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ReadOutputPort), (8 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_Reset), (116 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_ResetBit), (4 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_SetBit), (4 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_WriteBitValue), (10 bytes).
+    Removing apm32f10x_gpio.o(i.GPIO_WriteOutputPort), (4 bytes).
+    Removing apm32f10x_i2c.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_i2c.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_i2c.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ClearIntFlag), (8 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ClearStatusFlag), (94 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_Config), (260 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigFastModeDutyCycle), (30 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigNACKPosition), (26 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigOwnAddress2), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigPECPosition), (26 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigSMBusAlert), (26 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ConfigStructInit), (30 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_Disable), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableARP), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableAcknowledge), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableDMA), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableDMALastTransfer), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableDualAddress), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableGeneralCall), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableGenerateStart), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableGenerateStop), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableInterrupt), (8 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisablePEC), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisablePECTransmit), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableSoftwareReset), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_DisableStretchClock), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_Enable), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableARP), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableAcknowledge), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableDMA), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableDMALastTransfer), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableDualAddress), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableGeneralCall), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableGenerateStart), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableGenerateStop), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableInterrupt), (8 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnablePEC), (12 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnablePECTransmit), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableSoftwareReset), (14 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_EnableStretchClock), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadEventStatus), (44 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadIntFlag), (36 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadLastEvent), (30 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadPEC), (10 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadRegister), (86 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_ReadStatusFlag), (208 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_Reset), (52 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_RxData), (8 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_Tx7BitAddress), (32 bytes).
+    Removing apm32f10x_i2c.o(i.I2C_TxData), (10 bytes).
+    Removing apm32f10x_iwdt.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_iwdt.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_iwdt.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_ConfigDivider), (12 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_ConfigReload), (12 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_DisableWriteAccess), (20 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_Enable), (16 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_EnableWriteAccess), (24 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_ReadStatusFlag), (24 bytes).
+    Removing apm32f10x_iwdt.o(i.IWDT_Refresh), (16 bytes).
+    Removing apm32f10x_misc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_misc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_misc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_misc.o(i.NVIC_ConfigVectorTable), (20 bytes).
+    Removing apm32f10x_misc.o(i.NVIC_DisableIRQRequest), (24 bytes).
+    Removing apm32f10x_misc.o(i.NVIC_ResetystemLowPower), (16 bytes).
+    Removing apm32f10x_misc.o(i.NVIC_SetSystemLowPower), (16 bytes).
+    Removing apm32f10x_misc.o(i.SysTick_ConfigCLKSource), (40 bytes).
+    Removing apm32f10x_pmu.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_pmu.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_pmu.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_ClearStatusFlag), (44 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_ConfigPVDLevel), (28 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_DisableBackupAccess), (20 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_DisablePVD), (20 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_DisableWakeUpPin), (20 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_EnableBackupAccess), (24 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_EnablePVD), (20 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_EnableWakeUpPin), (24 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_EnterSTANDBYMode), (56 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_EnterSTOPMode), (76 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_ReadStatusFlag), (48 bytes).
+    Removing apm32f10x_pmu.o(i.PMU_Reset), (20 bytes).
+    Removing apm32f10x_rcm.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_rcm.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_rcm.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ClearIntFlag), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ClearStatusFlag), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigADCCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigAHB), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigAPB1), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigAPB2), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigFPUCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigHSE), (84 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigHSITrim), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigLSE), (76 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigMCO), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigPLL), (44 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigRTCCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigSYSCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ConfigUSBCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableAHBPeriphClock), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphClock), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableAPB1PeriphReset), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphClock), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableAPB2PeriphReset), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableBackupReset), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableCSS), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableHSI), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableInterrupt), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableLSI), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisablePLL), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_DisableRTCCLK), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphReset), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphReset), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableBackupReset), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableCSS), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableHSI), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableInterrupt), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableLSI), (20 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnablePLL), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_EnableRTCCLK), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ReadADCCLKFreq), (48 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ReadIntFlag), (24 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ReadSYSCLKSource), (16 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_ReadStatusFlag), (64 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_Reset), (80 bytes).
+    Removing apm32f10x_rcm.o(i.RCM_WaitHSEReady), (44 bytes).
+    Removing apm32f10x_rtc.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_rtc.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_rtc.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ClearIntFlag), (16 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ClearStatusFlag), (16 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ConfigAlarm), (44 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ConfigCounter), (44 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ConfigPrescaler), (44 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_DisableConfigMode), (20 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_DisableInterrupt), (16 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_EnableConfigMode), (20 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_EnableInterrupt), (16 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ReadCounter), (24 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ReadDivider), (28 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ReadIntFlag), (24 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_ReadStatusFlag), (24 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_WaitForLastTask), (20 bytes).
+    Removing apm32f10x_rtc.o(i.RTC_WaitForSynchro), (32 bytes).
+    Removing apm32f10x_sci2c.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_sci2c.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_sci2c.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_Abort), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_BlockTxCmd), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ClearIntFlag), (126 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_Config), (148 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigClkPeriod), (30 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigDMARxDataLevel), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigDMATxDataLevel), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigDataDir), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigDataRegister), (14 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigMasterAddr), (18 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigMasterCode), (4 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigRxFifoThreshold), (4 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigSDADelayTime), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigSDAHoldTime), (18 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigSlaveAddr), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigSpeed), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigSpikeSuppressionLimit), (16 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigStructInit), (36 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ConfigTxFifoThreshold), (4 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_Disable), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableDMA), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableInterrupt), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableMasterMode), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableRestart), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableSlaveMode), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableStopDetectAddressed), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_DisableStopDetectMasterActivity), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_Enable), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableDMA), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableInterrupt), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableMasterMode), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableRestart), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableSlaveMode), (10 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableStopDetectAddressed), (12 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_EnableStopDetectMasterActivity), (14 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_GernalCallAck), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadIntFlag), (20 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadRawIntFlag), (20 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadRxFifoDataCnt), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadStatusFlag), (44 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadTxAbortSource), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_ReadTxFifoDataCnt), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_Reset), (68 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_RxData), (8 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_SlaveDataNackOnly), (6 bytes).
+    Removing apm32f10x_sci2c.o(i.SCI2C_TxData), (10 bytes).
+    Removing apm32f10x_sdio.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_sdio.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_sdio.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ClearIntFlag), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ClearStatusFlag), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_Config), (48 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ConfigData), (48 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ConfigDataStructInit), (20 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ConfigPowerState), (28 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ConfigSDIOReadWaitMode), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ConfigStructInit), (16 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableCEATAInterrupt), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableClock), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableCommandCompletion), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableDMA), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableInterrupt), (16 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableSDIO), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableStartReadWait), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableStopReadWait), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableTxCEATA), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_DisableTxSDIOSuspend), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableCEATAInterrupt), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableClock), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableCommandCompletion), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableDMA), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableInterrupt), (16 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableSDIO), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableStartReadWait), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableStopReadWait), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableTxCEATA), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_EnableTxSDIOSuspend), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadCommandResponse), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadData), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadDataCounter), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadFIFOCount), (12 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadIntFlag), (36 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadPowerState), (16 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadResponse), (24 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_ReadStatusFlag), (24 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_Reset), (36 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_TxCommand), (44 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_TxCommandStructInit), (14 bytes).
+    Removing apm32f10x_sdio.o(i.SDIO_WriteData), (12 bytes).
+    Removing apm32f10x_spi.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_spi.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_spi.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_spi.o(i.I2S_Config), (224 bytes).
+    Removing apm32f10x_spi.o(i.I2S_ConfigStructInit), (20 bytes).
+    Removing apm32f10x_spi.o(i.I2S_Disable), (10 bytes).
+    Removing apm32f10x_spi.o(i.I2S_Enable), (14 bytes).
+    Removing apm32f10x_spi.o(i.SPI_Config), (50 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ConfigBiDirectionalLine), (28 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ConfigDataSize), (16 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ConfigStructInit), (24 bytes).
+    Removing apm32f10x_spi.o(i.SPI_Disable), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_DisableCRC), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_DisableSSOutput), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_Enable), (12 bytes).
+    Removing apm32f10x_spi.o(i.SPI_EnableCRC), (14 bytes).
+    Removing apm32f10x_spi.o(i.SPI_EnableSSOutput), (12 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_ClearIntFlag), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_ClearStatusFlag), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_DisableDMA), (24 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_DisableInterrupt), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_EnableDMA), (28 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_EnableInterrupt), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_ReadIntFlag), (28 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_ReadStatusFlag), (16 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_Reset), (76 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_RxData), (8 bytes).
+    Removing apm32f10x_spi.o(i.SPI_I2S_TxData), (4 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ReadCRCPolynomial), (8 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ReadRxCRC), (8 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ReadTxCRC), (8 bytes).
+    Removing apm32f10x_spi.o(i.SPI_ResetSoftwareNSS), (10 bytes).
+    Removing apm32f10x_spi.o(i.SPI_SetSoftwareNSS), (14 bytes).
+    Removing apm32f10x_spi.o(i.SPI_TxCRC), (14 bytes).
+    Removing apm32f10x_tmr.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_tmr.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_tmr.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_tmr.o(i.TI1Config), (168 bytes).
+    Removing apm32f10x_tmr.o(i.TI2Config), (176 bytes).
+    Removing apm32f10x_tmr.o(i.TI3Config), (180 bytes).
+    Removing apm32f10x_tmr.o(i.TI4Config), (78 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearIntFlag), (6 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearOC1Ref), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearOC2Ref), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearOC3Ref), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearOC4Ref), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ClearStatusFlag), (6 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigAutoreload), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigBDT), (42 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigBDTStructInit), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigClockDivision), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCompare1), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCompare2), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCompare3), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCompare4), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCounter), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigCounterMode), (24 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigDMA), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigETR), (34 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigETRClockMode1), (52 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigETRClockMode2), (36 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigEncodeInterface), (84 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigForcedOC1), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigForcedOC2), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigForcedOC3), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigForcedOC4), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIC), (116 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIC1Prescal), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIC2Prescal), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIC3Prescal), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIC4Prescal), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigICStructInit), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigIntTrigExternalClock), (26 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigInternalClock), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC1), (128 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC1Fast), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC1NPolarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC1Polarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC1Preload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC2), (160 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC2Fast), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC2NPolarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC2Polarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC2Preload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC3), (160 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC3Fast), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC3NPolarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC3Polarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC3Preload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC4), (108 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC4Fast), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC4Polarity), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOC4Preload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigOCStructInit), (20 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigPWM), (124 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigPrescaler), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigSinglePulseMode), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigTimeBase), (140 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigTimeBaseStructInit), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigTrigExternalClock), (64 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ConfigUpdateRequest), (24 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_Disable), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableAutoReload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableCCDMA), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableCCPreload), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableCCxChannel), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableCCxNChannel), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableDMASoure), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableHallSensor), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableInterrupt), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableMasterSlaveMode), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisablePWMOutputs), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableSelectCOM), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_DisableUpdate), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_Enable), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableAutoReload), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableCCDMA), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableCCPreload), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableCCxChannel), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableCCxNChannel), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableDMASoure), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableHallSensor), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableInterrupt), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableMasterSlaveMode), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnablePWMOutputs), (14 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableSelectCOM), (12 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_EnableUpdate), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_GenerateEvent), (4 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadCaputer1), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadCaputer2), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadCaputer3), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadCaputer4), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadCounter), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadIntFlag), (22 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadPrescaler), (8 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_ReadStatusFlag), (16 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_Reset), (192 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_SelectInputTrigger), (18 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_SelectOCxMode), (66 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_SelectOutputTrigger), (10 bytes).
+    Removing apm32f10x_tmr.o(i.TMR_SelectSlaveMode), (10 bytes).
+    Removing apm32f10x_usart.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_usart.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_usart.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_usart.o(i.USART_Address), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_ClearIntFlag), (16 bytes).
+    Removing apm32f10x_usart.o(i.USART_ClearStatusFlag), (8 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigClock), (42 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigClockStructInit), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigGuardTime), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigIrDA), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigLINBreakDetectLength), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigPrescaler), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigStructInit), (24 bytes).
+    Removing apm32f10x_usart.o(i.USART_ConfigWakeUp), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_Disable), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableDMA), (8 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableHalfDuplex), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableInterrupt), (42 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableIrDA), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableLIN), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableMuteMode), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableRx), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableSmartCard), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableSmartCardNACK), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_DisableTx), (10 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableHalfDuplex), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableIrDA), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableLIN), (14 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableMuteMode), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableRx), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableSmartCard), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableSmartCardNACK), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_EnableTx), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_Reset), (144 bytes).
+    Removing apm32f10x_usart.o(i.USART_TxBreak), (12 bytes).
+    Removing apm32f10x_usart.o(i.USART_TxData), (10 bytes).
+    Removing apm32f10x_wwdt.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_wwdt.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_wwdt.o(.rrx_text), (6 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_ClearFlag), (20 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_ConfigCounter), (16 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_ConfigTimebase), (32 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_ConfigWindowData), (36 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_Enable), (16 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_EnableEWI), (24 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_ReadFlag), (12 bytes).
+    Removing apm32f10x_wwdt.o(i.WWDT_Reset), (20 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(i.Delay), (20 bytes).
+    Removing apm32f10x_int.o(.rev16_text), (4 bytes).
+    Removing apm32f10x_int.o(.revsh_text), (4 bytes).
+    Removing apm32f10x_int.o(.rrx_text), (6 bytes).
+    Removing board.o(.rev16_text), (4 bytes).
+    Removing board.o(.revsh_text), (4 bytes).
+    Removing board.o(.rrx_text), (6 bytes).
+    Removing board.o(i.APM_MINI_LEDOff), (24 bytes).
+    Removing board.o(i.APM_MINI_LEDOn), (24 bytes).
+    Removing board.o(i.APM_MINI_LEDToggle), (36 bytes).
+    Removing board.o(i.APM_MINI_PBGetState), (32 bytes).
+    Removing board.o(i.APM_MINI_PBInit), (140 bytes).
+
+706 unused section(s) (total 20892 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    ..\..\..\..\..\Boards\Board.c            0x00000000   Number         0  board.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_adc.c 0x00000000   Number         0  apm32f10x_adc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_bakpr.c 0x00000000   Number         0  apm32f10x_bakpr.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_can.c 0x00000000   Number         0  apm32f10x_can.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_crc.c 0x00000000   Number         0  apm32f10x_crc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dac.c 0x00000000   Number         0  apm32f10x_dac.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dbgmcu.c 0x00000000   Number         0  apm32f10x_dbgmcu.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dma.c 0x00000000   Number         0  apm32f10x_dma.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dmc.c 0x00000000   Number         0  apm32f10x_dmc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_eint.c 0x00000000   Number         0  apm32f10x_eint.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_fmc.c 0x00000000   Number         0  apm32f10x_fmc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_gpio.c 0x00000000   Number         0  apm32f10x_gpio.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_i2c.c 0x00000000   Number         0  apm32f10x_i2c.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_iwdt.c 0x00000000   Number         0  apm32f10x_iwdt.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_misc.c 0x00000000   Number         0  apm32f10x_misc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_pmu.c 0x00000000   Number         0  apm32f10x_pmu.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_qspi.c 0x00000000   Number         0  apm32f10x_qspi.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_rcm.c 0x00000000   Number         0  apm32f10x_rcm.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_rtc.c 0x00000000   Number         0  apm32f10x_rtc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_sci2c.c 0x00000000   Number         0  apm32f10x_sci2c.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_sdio.c 0x00000000   Number         0  apm32f10x_sdio.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_smc.c 0x00000000   Number         0  apm32f10x_smc.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_spi.c 0x00000000   Number         0  apm32f10x_spi.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_tmr.c 0x00000000   Number         0  apm32f10x_tmr.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_usart.c 0x00000000   Number         0  apm32f10x_usart.o ABSOLUTE
+    ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_wwdt.c 0x00000000   Number         0  apm32f10x_wwdt.o ABSOLUTE
+    ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Source\arm\startup_apm32f10x_hd.s 0x00000000   Number         0  startup_apm32f10x_hd.o ABSOLUTE
+    ..\..\Source\apm32f10x_int.c             0x00000000   Number         0  apm32f10x_int.o ABSOLUTE
+    ..\..\Source\main.c                      0x00000000   Number         0  main.o ABSOLUTE
+    ..\..\Source\system_apm32f10x.c          0x00000000   Number         0  system_apm32f10x.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Boards\\Board.c      0x00000000   Number         0  board.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_adc.c 0x00000000   Number         0  apm32f10x_adc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_bakpr.c 0x00000000   Number         0  apm32f10x_bakpr.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_can.c 0x00000000   Number         0  apm32f10x_can.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_crc.c 0x00000000   Number         0  apm32f10x_crc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_dac.c 0x00000000   Number         0  apm32f10x_dac.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_dbgmcu.c 0x00000000   Number         0  apm32f10x_dbgmcu.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_dma.c 0x00000000   Number         0  apm32f10x_dma.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_dmc.c 0x00000000   Number         0  apm32f10x_dmc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_eint.c 0x00000000   Number         0  apm32f10x_eint.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_fmc.c 0x00000000   Number         0  apm32f10x_fmc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_gpio.c 0x00000000   Number         0  apm32f10x_gpio.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_i2c.c 0x00000000   Number         0  apm32f10x_i2c.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_iwdt.c 0x00000000   Number         0  apm32f10x_iwdt.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_misc.c 0x00000000   Number         0  apm32f10x_misc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_pmu.c 0x00000000   Number         0  apm32f10x_pmu.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_rcm.c 0x00000000   Number         0  apm32f10x_rcm.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_rtc.c 0x00000000   Number         0  apm32f10x_rtc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_sci2c.c 0x00000000   Number         0  apm32f10x_sci2c.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_sdio.c 0x00000000   Number         0  apm32f10x_sdio.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_smc.c 0x00000000   Number         0  apm32f10x_smc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_spi.c 0x00000000   Number         0  apm32f10x_spi.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_tmr.c 0x00000000   Number         0  apm32f10x_tmr.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_usart.c 0x00000000   Number         0  apm32f10x_usart.o ABSOLUTE
+    ..\\..\\..\\..\\..\\Libraries\\APM32F10x_StdPeriphDriver\\src\\apm32f10x_wwdt.c 0x00000000   Number         0  apm32f10x_wwdt.o ABSOLUTE
+    ..\\..\\Source\\apm32f10x_int.c          0x00000000   Number         0  apm32f10x_int.o ABSOLUTE
+    ..\\..\\Source\\main.c                   0x00000000   Number         0  main.o ABSOLUTE
+    ..\\..\\Source\\system_apm32f10x.c       0x00000000   Number         0  system_apm32f10x.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x08000000   Section      324  startup_apm32f10x_hd.o(RESET)
+    .ARM.Collect$$$$00000000                 0x08000144   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x08000144   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x08000148   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0800014c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0800014c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0800014c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x08000154   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x08000154   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x08000154   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x08000154   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000158   Section       36  startup_apm32f10x_hd.o(.text)
+    .text                                    0x0800017c   Section        0  memcpya.o(.text)
+    .text                                    0x080001a0   Section        0  strlen.o(.text)
+    .text                                    0x080001b0   Section       36  init.o(.text)
+    i.APM_MINI_COMInit                       0x080001d4   Section        0  board.o(i.APM_MINI_COMInit)
+    i.APM_MINI_LEDInit                       0x0800027c   Section        0  board.o(i.APM_MINI_LEDInit)
+    i.BusFault_Handler                       0x080002c8   Section        0  apm32f10x_int.o(i.BusFault_Handler)
+    i.DMA_Config                             0x080002cc   Section        0  apm32f10x_dma.o(i.DMA_Config)
+    i.DMA_ConfigDataNumber                   0x0800032a   Section        0  apm32f10x_dma.o(i.DMA_ConfigDataNumber)
+    i.DMA_Disable                            0x0800032e   Section        0  apm32f10x_dma.o(i.DMA_Disable)
+    i.DMA_Enable                             0x08000338   Section        0  apm32f10x_dma.o(i.DMA_Enable)
+    i.DMA_ReadDataNumber                     0x08000344   Section        0  apm32f10x_dma.o(i.DMA_ReadDataNumber)
+    i.DMA_Reset                              0x0800034c   Section        0  apm32f10x_dma.o(i.DMA_Reset)
+    i.DebugMon_Handler                       0x08000498   Section        0  apm32f10x_int.o(i.DebugMon_Handler)
+    i.GPIO_Config                            0x0800049a   Section        0  apm32f10x_gpio.o(i.GPIO_Config)
+    i.HardFault_Handler                      0x08000534   Section        0  apm32f10x_int.o(i.HardFault_Handler)
+    i.MemManage_Handler                      0x08000538   Section        0  apm32f10x_int.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x0800053c   Section        0  apm32f10x_int.o(i.NMI_Handler)
+    i.NVIC_ConfigPriorityGroup               0x08000540   Section        0  apm32f10x_misc.o(i.NVIC_ConfigPriorityGroup)
+    i.NVIC_EnableIRQRequest                  0x08000554   Section        0  apm32f10x_misc.o(i.NVIC_EnableIRQRequest)
+    i.PendSV_Handler                         0x080005f4   Section        0  apm32f10x_int.o(i.PendSV_Handler)
+    i.RCM_EnableAHBPeriphClock               0x080005f8   Section        0  apm32f10x_rcm.o(i.RCM_EnableAHBPeriphClock)
+    i.RCM_EnableAPB1PeriphClock              0x08000608   Section        0  apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphClock)
+    i.RCM_EnableAPB2PeriphClock              0x08000618   Section        0  apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock)
+    i.RCM_ReadHCLKFreq                       0x08000628   Section        0  apm32f10x_rcm.o(i.RCM_ReadHCLKFreq)
+    i.RCM_ReadPCLKFreq                       0x08000664   Section        0  apm32f10x_rcm.o(i.RCM_ReadPCLKFreq)
+    i.RCM_ReadSYSCLKFreq                     0x080006b0   Section        0  apm32f10x_rcm.o(i.RCM_ReadSYSCLKFreq)
+    i.SVC_Handler                            0x08000714   Section        0  apm32f10x_int.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x08000716   Section        0  apm32f10x_int.o(i.SysTick_Handler)
+    i.SystemClock72M                         0x08000718   Section        0  system_apm32f10x.o(i.SystemClock72M)
+    SystemClock72M                           0x08000719   Thumb Code   212  system_apm32f10x.o(i.SystemClock72M)
+    i.SystemClockConfig                      0x080007f4   Section        0  system_apm32f10x.o(i.SystemClockConfig)
+    SystemClockConfig                        0x080007f5   Thumb Code     8  system_apm32f10x.o(i.SystemClockConfig)
+    i.SystemInit                             0x080007fc   Section        0  system_apm32f10x.o(i.SystemInit)
+    i.USART1_IRQHandler                      0x0800085c   Section        0  apm32f10x_int.o(i.USART1_IRQHandler)
+    i.USART1_Isr                             0x08000864   Section        0  main.o(i.USART1_Isr)
+    i.USART2_IRQHandler                      0x080008b4   Section        0  apm32f10x_int.o(i.USART2_IRQHandler)
+    i.USART_Config                           0x080008b8   Section        0  apm32f10x_usart.o(i.USART_Config)
+    i.USART_Enable                           0x08000948   Section        0  apm32f10x_usart.o(i.USART_Enable)
+    i.USART_EnableDMA                        0x08000956   Section        0  apm32f10x_usart.o(i.USART_EnableDMA)
+    i.USART_EnableInterrupt                  0x0800095e   Section        0  apm32f10x_usart.o(i.USART_EnableInterrupt)
+    i.USART_ReadIntFlag                      0x08000986   Section        0  apm32f10x_usart.o(i.USART_ReadIntFlag)
+    i.USART_ReadStatusFlag                   0x080009c4   Section        0  apm32f10x_usart.o(i.USART_ReadStatusFlag)
+    i.USART_RxData                           0x080009d4   Section        0  apm32f10x_usart.o(i.USART_RxData)
+    i.UsageFault_Handler                     0x080009de   Section        0  apm32f10x_int.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x080009e2   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080009f0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080009f2   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.config_dma                             0x08000a00   Section        0  main.o(i.config_dma)
+    i.main                                   0x08000a88   Section        0  main.o(i.main)
+    i.send_data                              0x08000b14   Section        0  main.o(i.send_data)
+    .constdata                               0x08000b54   Section       68  board.o(.constdata)
+    .data                                    0x20000000   Section       40  board.o(.data)
+    .bss                                     0x20000028   Section      512  main.o(.bss)
+    STACK                                    0x20000228   Section     1024  startup_apm32f10x_hd.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x00000144   Number         0  startup_apm32f10x_hd.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_apm32f10x_hd.o(RESET)
+    __Vectors_End                            0x08000144   Data           0  startup_apm32f10x_hd.o(RESET)
+    __main                                   0x08000145   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x08000145   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x08000149   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0800014d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0800014d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0800014d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0800014d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x08000155   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x08000155   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x08000159   Thumb Code     8  startup_apm32f10x_hd.o(.text)
+    ADC1_2_IRQHandler                        0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    ADC3_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    CAN1_RX1_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    CAN1_SCE_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    CAN2_RX1_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    CAN2_SCE_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel1_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel2_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel3_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel4_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel5_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel6_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA1_Channel7_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA2_Channel1_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA2_Channel2_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA2_Channel3_IRQHandler                 0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    DMA2_Channel4_5_IRQHandler               0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT0_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT15_10_IRQHandler                     0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT1_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT2_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT3_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT4_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EINT9_5_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    EMMC_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    FLASH_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    I2C1_ER_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    I2C1_EV_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    I2C2_ER_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    I2C2_EV_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    PVD_IRQHandler                           0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    RCM_IRQHandler                           0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    RTCAlarm_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    RTC_IRQHandler                           0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    SDIO_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    SPI1_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    SPI2_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    SPI3_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TAMPER_IRQHandler                        0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR1_BRK_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR1_CC_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR1_TRG_COM_IRQHandler                  0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR1_UP_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR2_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR3_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR4_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR5_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR6_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR7_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR8_BRK_IRQHandler                      0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR8_CC_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR8_TRG_COM_IRQHandler                  0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    TMR8_UP_IRQHandler                       0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    UART4_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    UART5_IRQHandler                         0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USART3_IRQHandler                        0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USBD1_HP_CAN1_TX_IRQHandler              0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USBD1_LP_CAN1_RX0_IRQHandler             0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USBD2_HP_CAN2_TX_IRQHandler              0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USBD2_LP_CAN2_RX0_IRQHandler             0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    USBDWakeUp_IRQHandler                    0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    WWDT_IRQHandler                          0x08000173   Thumb Code     0  startup_apm32f10x_hd.o(.text)
+    __aeabi_memcpy                           0x0800017d   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x0800017d   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x0800017d   Thumb Code     0  memcpya.o(.text)
+    strlen                                   0x080001a1   Thumb Code    14  strlen.o(.text)
+    __scatterload                            0x080001b1   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x080001b1   Thumb Code     0  init.o(.text)
+    APM_MINI_COMInit                         0x080001d5   Thumb Code   136  board.o(i.APM_MINI_COMInit)
+    APM_MINI_LEDInit                         0x0800027d   Thumb Code    64  board.o(i.APM_MINI_LEDInit)
+    BusFault_Handler                         0x080002c9   Thumb Code     4  apm32f10x_int.o(i.BusFault_Handler)
+    DMA_Config                               0x080002cd   Thumb Code    94  apm32f10x_dma.o(i.DMA_Config)
+    DMA_ConfigDataNumber                     0x0800032b   Thumb Code     4  apm32f10x_dma.o(i.DMA_ConfigDataNumber)
+    DMA_Disable                              0x0800032f   Thumb Code    10  apm32f10x_dma.o(i.DMA_Disable)
+    DMA_Enable                               0x08000339   Thumb Code    12  apm32f10x_dma.o(i.DMA_Enable)
+    DMA_ReadDataNumber                       0x08000345   Thumb Code     8  apm32f10x_dma.o(i.DMA_ReadDataNumber)
+    DMA_Reset                                0x0800034d   Thumb Code   322  apm32f10x_dma.o(i.DMA_Reset)
+    DebugMon_Handler                         0x08000499   Thumb Code     2  apm32f10x_int.o(i.DebugMon_Handler)
+    GPIO_Config                              0x0800049b   Thumb Code   154  apm32f10x_gpio.o(i.GPIO_Config)
+    HardFault_Handler                        0x08000535   Thumb Code     4  apm32f10x_int.o(i.HardFault_Handler)
+    MemManage_Handler                        0x08000539   Thumb Code     4  apm32f10x_int.o(i.MemManage_Handler)
+    NMI_Handler                              0x0800053d   Thumb Code     2  apm32f10x_int.o(i.NMI_Handler)
+    NVIC_ConfigPriorityGroup                 0x08000541   Thumb Code    10  apm32f10x_misc.o(i.NVIC_ConfigPriorityGroup)
+    NVIC_EnableIRQRequest                    0x08000555   Thumb Code   150  apm32f10x_misc.o(i.NVIC_EnableIRQRequest)
+    PendSV_Handler                           0x080005f5   Thumb Code     2  apm32f10x_int.o(i.PendSV_Handler)
+    RCM_EnableAHBPeriphClock                 0x080005f9   Thumb Code    12  apm32f10x_rcm.o(i.RCM_EnableAHBPeriphClock)
+    RCM_EnableAPB1PeriphClock                0x08000609   Thumb Code    12  apm32f10x_rcm.o(i.RCM_EnableAPB1PeriphClock)
+    RCM_EnableAPB2PeriphClock                0x08000619   Thumb Code    12  apm32f10x_rcm.o(i.RCM_EnableAPB2PeriphClock)
+    RCM_ReadHCLKFreq                         0x08000629   Thumb Code    38  apm32f10x_rcm.o(i.RCM_ReadHCLKFreq)
+    RCM_ReadPCLKFreq                         0x08000665   Thumb Code    62  apm32f10x_rcm.o(i.RCM_ReadPCLKFreq)
+    RCM_ReadSYSCLKFreq                       0x080006b1   Thumb Code    86  apm32f10x_rcm.o(i.RCM_ReadSYSCLKFreq)
+    SVC_Handler                              0x08000715   Thumb Code     2  apm32f10x_int.o(i.SVC_Handler)
+    SysTick_Handler                          0x08000717   Thumb Code     2  apm32f10x_int.o(i.SysTick_Handler)
+    SystemInit                               0x080007fd   Thumb Code    80  system_apm32f10x.o(i.SystemInit)
+    USART1_IRQHandler                        0x0800085d   Thumb Code     8  apm32f10x_int.o(i.USART1_IRQHandler)
+    USART1_Isr                               0x08000865   Thumb Code    62  main.o(i.USART1_Isr)
+    USART2_IRQHandler                        0x080008b5   Thumb Code     2  apm32f10x_int.o(i.USART2_IRQHandler)
+    USART_Config                             0x080008b9   Thumb Code   138  apm32f10x_usart.o(i.USART_Config)
+    USART_Enable                             0x08000949   Thumb Code    14  apm32f10x_usart.o(i.USART_Enable)
+    USART_EnableDMA                          0x08000957   Thumb Code     8  apm32f10x_usart.o(i.USART_EnableDMA)
+    USART_EnableInterrupt                    0x0800095f   Thumb Code    40  apm32f10x_usart.o(i.USART_EnableInterrupt)
+    USART_ReadIntFlag                        0x08000987   Thumb Code    62  apm32f10x_usart.o(i.USART_ReadIntFlag)
+    USART_ReadStatusFlag                     0x080009c5   Thumb Code    16  apm32f10x_usart.o(i.USART_ReadStatusFlag)
+    USART_RxData                             0x080009d5   Thumb Code    10  apm32f10x_usart.o(i.USART_RxData)
+    UsageFault_Handler                       0x080009df   Thumb Code     4  apm32f10x_int.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x080009e3   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080009f1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080009f3   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    config_dma                               0x08000a01   Thumb Code   120  main.o(i.config_dma)
+    main                                     0x08000a89   Thumb Code   116  main.o(i.main)
+    send_data                                0x08000b15   Thumb Code    52  main.o(i.send_data)
+    GPIO_PIN                                 0x08000b54   Data           4  board.o(.constdata)
+    GPIO_CLK                                 0x08000b58   Data           8  board.o(.constdata)
+    BUTTON_PIN                               0x08000b60   Data           4  board.o(.constdata)
+    BUTTON_CLK                               0x08000b64   Data           8  board.o(.constdata)
+    BUTTON_EINT_LINE                         0x08000b6c   Data           4  board.o(.constdata)
+    BUTTON_PORT_SOURCE                       0x08000b70   Data           2  board.o(.constdata)
+    BUTTON_PIN_SOURCE                        0x08000b72   Data           2  board.o(.constdata)
+    BUTTON_IRQn                              0x08000b74   Data           2  board.o(.constdata)
+    COM_USART_CLK                            0x08000b78   Data           8  board.o(.constdata)
+    COM_TX_PORT_CLK                          0x08000b80   Data           8  board.o(.constdata)
+    COM_RX_PORT_CLK                          0x08000b88   Data           8  board.o(.constdata)
+    COM_TX_PIN                               0x08000b90   Data           4  board.o(.constdata)
+    COM_RX_PIN                               0x08000b94   Data           4  board.o(.constdata)
+    Region$$Table$$Base                      0x08000b98   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000bb8   Number         0  anon$$obj.o(Region$$Table)
+    GPIO_PORT                                0x20000000   Data           8  board.o(.data)
+    BUTTON_PORT                              0x20000008   Data           8  board.o(.data)
+    COM_USART                                0x20000010   Data           8  board.o(.data)
+    COM_TX_PORT                              0x20000018   Data           8  board.o(.data)
+    COM_RX_PORT                              0x20000020   Data           8  board.o(.data)
+    uart_tx_buf                              0x20000028   Data         256  main.o(.bss)
+    uart_rx_buf                              0x20000128   Data         256  main.o(.bss)
+    __initial_sp                             0x20000628   Data           0  startup_apm32f10x_hd.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000145
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000be0, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000bb8, Max: 0x00080000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x00000144   Data   RO           71    RESET               startup_apm32f10x_hd.o
+    0x08000144   0x08000144   0x00000000   Code   RO         4618  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000144   0x08000144   0x00000004   Code   RO         4627    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000148   0x08000148   0x00000004   Code   RO         4630    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO         4632    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO         4634    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0800014c   0x0800014c   0x00000008   Code   RO         4635    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000154   0x08000154   0x00000000   Code   RO         4637    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000154   0x08000154   0x00000000   Code   RO         4639    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000154   0x08000154   0x00000004   Code   RO         4628    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000158   0x08000158   0x00000024   Code   RO           72    .text               startup_apm32f10x_hd.o
+    0x0800017c   0x0800017c   0x00000024   Code   RO         4621    .text               mc_w.l(memcpya.o)
+    0x080001a0   0x080001a0   0x0000000e   Code   RO         4623    .text               mc_w.l(strlen.o)
+    0x080001ae   0x080001ae   0x00000002   PAD
+    0x080001b0   0x080001b0   0x00000024   Code   RO         4641    .text               mc_w.l(init.o)
+    0x080001d4   0x080001d4   0x000000a8   Code   RO         4554    i.APM_MINI_COMInit  board.o
+    0x0800027c   0x0800027c   0x0000004c   Code   RO         4555    i.APM_MINI_LEDInit  board.o
+    0x080002c8   0x080002c8   0x00000004   Code   RO         4467    i.BusFault_Handler  apm32f10x_int.o
+    0x080002cc   0x080002cc   0x0000005e   Code   RO          892    i.DMA_Config        apm32f10x_dma.o
+    0x0800032a   0x0800032a   0x00000004   Code   RO          893    i.DMA_ConfigDataNumber  apm32f10x_dma.o
+    0x0800032e   0x0800032e   0x0000000a   Code   RO          895    i.DMA_Disable       apm32f10x_dma.o
+    0x08000338   0x08000338   0x0000000c   Code   RO          897    i.DMA_Enable        apm32f10x_dma.o
+    0x08000344   0x08000344   0x00000008   Code   RO          899    i.DMA_ReadDataNumber  apm32f10x_dma.o
+    0x0800034c   0x0800034c   0x0000014c   Code   RO          902    i.DMA_Reset         apm32f10x_dma.o
+    0x08000498   0x08000498   0x00000002   Code   RO         4468    i.DebugMon_Handler  apm32f10x_int.o
+    0x0800049a   0x0800049a   0x0000009a   Code   RO         1592    i.GPIO_Config       apm32f10x_gpio.o
+    0x08000534   0x08000534   0x00000004   Code   RO         4469    i.HardFault_Handler  apm32f10x_int.o
+    0x08000538   0x08000538   0x00000004   Code   RO         4470    i.MemManage_Handler  apm32f10x_int.o
+    0x0800053c   0x0800053c   0x00000002   Code   RO         4471    i.NMI_Handler       apm32f10x_int.o
+    0x0800053e   0x0800053e   0x00000002   PAD
+    0x08000540   0x08000540   0x00000014   Code   RO         2086    i.NVIC_ConfigPriorityGroup  apm32f10x_misc.o
+    0x08000554   0x08000554   0x000000a0   Code   RO         2089    i.NVIC_EnableIRQRequest  apm32f10x_misc.o
+    0x080005f4   0x080005f4   0x00000002   Code   RO         4472    i.PendSV_Handler    apm32f10x_int.o
+    0x080005f6   0x080005f6   0x00000002   PAD
+    0x080005f8   0x080005f8   0x00000010   Code   RO         2274    i.RCM_EnableAHBPeriphClock  apm32f10x_rcm.o
+    0x08000608   0x08000608   0x00000010   Code   RO         2275    i.RCM_EnableAPB1PeriphClock  apm32f10x_rcm.o
+    0x08000618   0x08000618   0x00000010   Code   RO         2277    i.RCM_EnableAPB2PeriphClock  apm32f10x_rcm.o
+    0x08000628   0x08000628   0x0000003c   Code   RO         2287    i.RCM_ReadHCLKFreq  apm32f10x_rcm.o
+    0x08000664   0x08000664   0x0000004c   Code   RO         2289    i.RCM_ReadPCLKFreq  apm32f10x_rcm.o
+    0x080006b0   0x080006b0   0x00000064   Code   RO         2290    i.RCM_ReadSYSCLKFreq  apm32f10x_rcm.o
+    0x08000714   0x08000714   0x00000002   Code   RO         4473    i.SVC_Handler       apm32f10x_int.o
+    0x08000716   0x08000716   0x00000002   Code   RO         4474    i.SysTick_Handler   apm32f10x_int.o
+    0x08000718   0x08000718   0x000000dc   Code   RO            4    i.SystemClock72M    system_apm32f10x.o
+    0x080007f4   0x080007f4   0x00000008   Code   RO            5    i.SystemClockConfig  system_apm32f10x.o
+    0x080007fc   0x080007fc   0x00000060   Code   RO            7    i.SystemInit        system_apm32f10x.o
+    0x0800085c   0x0800085c   0x00000008   Code   RO         4475    i.USART1_IRQHandler  apm32f10x_int.o
+    0x08000864   0x08000864   0x00000050   Code   RO         4401    i.USART1_Isr        main.o
+    0x080008b4   0x080008b4   0x00000002   Code   RO         4476    i.USART2_IRQHandler  apm32f10x_int.o
+    0x080008b6   0x080008b6   0x00000002   PAD
+    0x080008b8   0x080008b8   0x00000090   Code   RO         4073    i.USART_Config      apm32f10x_usart.o
+    0x08000948   0x08000948   0x0000000e   Code   RO         4093    i.USART_Enable      apm32f10x_usart.o
+    0x08000956   0x08000956   0x00000008   Code   RO         4094    i.USART_EnableDMA   apm32f10x_usart.o
+    0x0800095e   0x0800095e   0x00000028   Code   RO         4096    i.USART_EnableInterrupt  apm32f10x_usart.o
+    0x08000986   0x08000986   0x0000003e   Code   RO         4104    i.USART_ReadIntFlag  apm32f10x_usart.o
+    0x080009c4   0x080009c4   0x00000010   Code   RO         4105    i.USART_ReadStatusFlag  apm32f10x_usart.o
+    0x080009d4   0x080009d4   0x0000000a   Code   RO         4107    i.USART_RxData      apm32f10x_usart.o
+    0x080009de   0x080009de   0x00000004   Code   RO         4477    i.UsageFault_Handler  apm32f10x_int.o
+    0x080009e2   0x080009e2   0x0000000e   Code   RO         4645    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080009f0   0x080009f0   0x00000002   Code   RO         4646    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080009f2   0x080009f2   0x0000000e   Code   RO         4647    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000a00   0x08000a00   0x00000088   Code   RO         4402    i.config_dma        main.o
+    0x08000a88   0x08000a88   0x0000008c   Code   RO         4403    i.main              main.o
+    0x08000b14   0x08000b14   0x00000040   Code   RO         4404    i.send_data         main.o
+    0x08000b54   0x08000b54   0x00000044   Data   RO         4561    .constdata          board.o
+    0x08000b98   0x08000b98   0x00000020   Data   RO         4643    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000bb8, Size: 0x00000628, Max: 0x00020000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000bb8   0x00000028   Data   RW         4562    .data               board.o
+    0x20000028        -       0x00000200   Zero   RW         4405    .bss                main.o
+    0x20000228        -       0x00000400   Zero   RW           69    STACK               startup_apm32f10x_hd.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       460         10          0          0          0       8092   apm32f10x_dma.o
+       154          0          0          0          0       4502   apm32f10x_gpio.o
+        36          0          0          0          0       5082   apm32f10x_int.o
+       180         20          0          0          0       2487   apm32f10x_misc.o
+       284         62          0          0          0       4650   apm32f10x_rcm.o
+       294          6          0          0          0       7750   apm32f10x_usart.o
+       244         44         68         40          0       2958   board.o
+       420         70          0          0        512       5343   main.o
+        36          8        324          0       1024        920   startup_apm32f10x_hd.o
+       324         24          0          0          0      77329   system_apm32f10x.o
+
+    ----------------------------------------------------------------------
+      2438        244        424         40       1536     119113   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0         68   memcpya.o
+        14          0          0          0          0         68   strlen.o
+
+    ----------------------------------------------------------------------
+       138         16          0          0          0        204   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       136         16          0          0          0        204   mc_w.l
+
+    ----------------------------------------------------------------------
+       138         16          0          0          0        204   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2576        260        424         40       1536     117493   Grand Totals
+      2576        260        424         40       1536     117493   ELF Image Totals
+      2576        260        424         40          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3000 (   2.93kB)
+    Total RW  Size (RW Data + ZI Data)              1576 (   1.54kB)
+    Total ROM Size (Code + RO Data + RW Data)       3040 (   2.97kB)
+
+==============================================================================
+

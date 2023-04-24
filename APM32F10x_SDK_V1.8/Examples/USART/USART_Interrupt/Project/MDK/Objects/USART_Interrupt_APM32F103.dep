@@ -1,0 +1,296 @@
+Dependencies for Project 'USART_Interrupt', Target 'APM32F103': (DO NOT MODIFY !)
+F (..\..\Source\system_apm32f10x.c)(0x63841912)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\system_apm32f10x.o --omf_browse .\objects\system_apm32f10x.crf --depend .\objects\system_apm32f10x.d)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Source\arm\startup_apm32f10x_hd.s)(0x6386EC66)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 525" --pd "APM32F10X_HD SETA 1"--list .\listings\startup_apm32f10x_hd.lst --xref -o .\objects\startup_apm32f10x_hd.o --depend .\objects\startup_apm32f10x_hd.d)
+F (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Source\arm\startup_apm32f10x_md.s)(0x6386F3D7)()
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_adc.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_adc.o --omf_browse .\objects\apm32f10x_adc.crf --depend .\objects\apm32f10x_adc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_adc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_bakpr.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_bakpr.o --omf_browse .\objects\apm32f10x_bakpr.crf --depend .\objects\apm32f10x_bakpr.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_bakpr.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_can.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_can.o --omf_browse .\objects\apm32f10x_can.crf --depend .\objects\apm32f10x_can.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_can.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_crc.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_crc.o --omf_browse .\objects\apm32f10x_crc.crf --depend .\objects\apm32f10x_crc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_crc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dac.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_dac.o --omf_browse .\objects\apm32f10x_dac.crf --depend .\objects\apm32f10x_dac.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dac.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dbgmcu.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_dbgmcu.o --omf_browse .\objects\apm32f10x_dbgmcu.crf --depend .\objects\apm32f10x_dbgmcu.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dbgmcu.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dma.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_dma.o --omf_browse .\objects\apm32f10x_dma.crf --depend .\objects\apm32f10x_dma.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dma.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_dmc.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_dmc.o --omf_browse .\objects\apm32f10x_dmc.crf --depend .\objects\apm32f10x_dmc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dmc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_eint.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_eint.o --omf_browse .\objects\apm32f10x_eint.crf --depend .\objects\apm32f10x_eint.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_eint.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_smc.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_smc.o --omf_browse .\objects\apm32f10x_smc.crf --depend .\objects\apm32f10x_smc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_smc.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_fmc.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_fmc.o --omf_browse .\objects\apm32f10x_fmc.crf --depend .\objects\apm32f10x_fmc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_fmc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_gpio.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_gpio.o --omf_browse .\objects\apm32f10x_gpio.crf --depend .\objects\apm32f10x_gpio.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_gpio.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_i2c.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_i2c.o --omf_browse .\objects\apm32f10x_i2c.crf --depend .\objects\apm32f10x_i2c.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_i2c.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_iwdt.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_iwdt.o --omf_browse .\objects\apm32f10x_iwdt.crf --depend .\objects\apm32f10x_iwdt.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_iwdt.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_misc.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_misc.o --omf_browse .\objects\apm32f10x_misc.crf --depend .\objects\apm32f10x_misc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_misc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_pmu.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_pmu.o --omf_browse .\objects\apm32f10x_pmu.crf --depend .\objects\apm32f10x_pmu.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_pmu.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_qspi.c)(0x6386EC66)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_qspi.o --omf_browse .\objects\apm32f10x_qspi.crf --depend .\objects\apm32f10x_qspi.d)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_rcm.c)(0x638EADDD)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_rcm.o --omf_browse .\objects\apm32f10x_rcm.crf --depend .\objects\apm32f10x_rcm.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_rtc.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_rtc.o --omf_browse .\objects\apm32f10x_rtc.crf --depend .\objects\apm32f10x_rtc.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rtc.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_sci2c.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_sci2c.o --omf_browse .\objects\apm32f10x_sci2c.crf --depend .\objects\apm32f10x_sci2c.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_sci2c.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_sdio.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_sdio.o --omf_browse .\objects\apm32f10x_sdio.crf --depend .\objects\apm32f10x_sdio.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_sdio.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_spi.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_spi.o --omf_browse .\objects\apm32f10x_spi.crf --depend .\objects\apm32f10x_spi.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_spi.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_tmr.c)(0x6386B4F1)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_tmr.o --omf_browse .\objects\apm32f10x_tmr.crf --depend .\objects\apm32f10x_tmr.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_tmr.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_usart.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_usart.o --omf_browse .\objects\apm32f10x_usart.crf --depend .\objects\apm32f10x_usart.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_usart.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\src\apm32f10x_wwdt.c)(0x6385DE7C)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_wwdt.o --omf_browse .\objects\apm32f10x_wwdt.crf --depend .\objects\apm32f10x_wwdt.d)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_wwdt.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+F (..\..\Source\main.c)(0x64462643)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\Include\main.h)(0x64462643)
+I (..\..\..\..\..\Boards\Board.h)(0x6386ECFE)
+I (..\..\..\..\..\Boards\Board_APM32F103_MINI\inc\Board_APM32F103_MINI.h)(0x6386BAF7)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_gpio.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_eint.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_usart.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_misc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dma.h)(0x6386EC66)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\Source\apm32f10x_int.c)(0x6446266D)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\apm32f10x_int.o --omf_browse .\objects\apm32f10x_int.crf --depend .\objects\apm32f10x_int.d)
+I (..\..\Include\main.h)(0x64462643)
+I (..\..\..\..\..\Boards\Board.h)(0x6386ECFE)
+I (..\..\..\..\..\Boards\Board_APM32F103_MINI\inc\Board_APM32F103_MINI.h)(0x6386BAF7)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_gpio.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_eint.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_usart.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_misc.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_dma.h)(0x6386EC66)
+I (..\..\Include\apm32f10x_int.h)(0x63841913)
+F (..\..\..\..\..\Boards\Board.c)(0x6386ECFE)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Include -I ..\..\..\..\..\Boards -I ..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc -I ..\..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include-I.\RTE\_APM32F103-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Device\Geehy\APM32F10x\Include-IC:\MySofaware\MDK5\ARM\CMSIS\Include-IC:\MySofaware\MDK5\ARM\PACK\Geehy\APM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="525" -DAPM32F10X_HD -DAPM32F10X_HD -DAPM32F103_MINI-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
+I (..\..\..\..\..\Boards\Board.h)(0x6386ECFE)
+I (..\..\..\..\..\Boards\Board_APM32F103_MINI\inc\Board_APM32F103_MINI.h)(0x6386BAF7)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\apm32f10x.h)(0x6386F3FE)
+I (..\..\..\..\..\Libraries\CMSIS\Include\core_cm3.h)(0x62ECBEBD)
+I (C:\MySofaware\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x62ECBEBD)
+I (..\..\..\..\..\Libraries\Device\Geehy\APM32F10x\Include\system_apm32f10x.h)(0x6386F3FD)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_gpio.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_rcm.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_eint.h)(0x6386EC66)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_usart.h)(0x6385DE7B)
+I (..\..\..\..\..\Libraries\APM32F10x_StdPeriphDriver\inc\apm32f10x_misc.h)(0x6386EC66)
+I (..\..\..\..\..\Boards\Board_APM32F103_MINI\src\Board_APM32F103_MINI.c)(0x6386ECFE)
