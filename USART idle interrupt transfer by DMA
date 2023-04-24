@@ -1,0 +1,7 @@
+Demonstrate the use of USART data receiving and sending by idle interrupt and DMA transfer. 
+This method can receive variable-length data through USART DMA, 
+but the data received at one time cannot exceed the maximum receiving length set by DMA transfer.
+Connect the PA9 and PA10 of the experimental board to the USB-to-serial port tool,
+and then connect the tool to the USB of the host computer, open the serial port assistant of the PC host computer, 
+and the MCU will print information after power-on and reset, and then if it receives a message from the PC For the data, 
+the MCU will return the same data, and verify the correctness of data transmission and reception through the serial port assistant.
